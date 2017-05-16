@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="cidade-maravilhosa" content="A guide to activities and places to visit in Rio de Janeiro.">
+	<title>Cidade Maravilhosa</title>
+	<link rel="icon" href="./img/brazil_640.png">
+	<style media="screen">
+		body{
+			padding: 0px;
+			margin: 0px;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		}
+		footer{
+			padding: 30px;
+		}
+		.panel{
+			color: gray;
+			display:inline-block;
+			width: 200px;
+			vertical-align:top;
+		}
+		.pic{
+			width: 200px;
+		}
+		#top{
+			text-align:center;
+		}
+		#banner-img{
+			width: 100%;
+		}
+		#caption{
+			font-style:italic;
+		}
+		.wrapper{
+			text-align:center;
+		}
+
+		#survey-table{
+			width: 600px;
+		}
+		#survey-table td{
+			text-align: left;
+			vertical-align: top;
+		}
+		#survey-table thead tr{
+			font-style: italic;
+		}
+
+		.survey-panel{
+			display: inline-block;
+			vertical-align:top;
+		}
+		#survey-img{
+			width:350px;
+			padding: 30px;
+			border: 12px;
+			border-color: green;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="top">
+		<img id="banner-img" src="./img/DSC03725-short.jpg" alt="Recreio beach">
+		<h1>C I D A D E  +  M A R A V I L H O S A</h1>
+		<p id="caption">Discovering Rio de Janeiro</p>
+	</div>
+	<div class="wrapper">
+
+		<div class="panel" id="ipanema">
+			<h3>IPANEMA</h3>
+			<a href="./ipanema.html" target="_blank">
+				<img class="pic" src="./img/DSC04131-crop.jpg" alt="Ipanema">
+			</a>
+			<p>Relax on Rio's most popular beach.</p>
+		</div>
+
+		<div class="panel" id="corcovado">
+			<h3>CORCOVADO</h3>
+			<a href="./corcovado.html" target="_blank">
+				<img class="pic" src="./img/DSC03947-crop.jpg" alt="Corcovado">
+			</a>
+			<p>Scale this mountiain to see the iconic Christ the Redeemer statue up close.</p>
+		</div>
+
+		<div class="panel" id="ilha-grande">
+			<h3>ILHA GRANDE</h3>
+			<a href="./ilha-grande.html" target="_blank">
+				<img class="pic" src="./img/DSC04038-crop.jpg" alt="Ilha Grande">
+			</a>
+			<p>Make a getaway to this lesser known beach paradise.</p>
+		</div>
+
+		<div class="panel" id="lapa">
+			<h3>LAPA</h3>
+			<a href="./lapa.html">
+				<img class="pic" src="./img/WP_20140720_009-crop.jpg" alt="Lapa">
+			</a>
+			<p>Take full advantage of Rio's wild nightlife in Lapa.</p>
+		</div>
+
+		<div class="panel" id="sport">
+			<h3>SPORT</h3>
+			<a href="./sport.html">
+				<img class="pic" src="./img/hanggliding-crop.jpg" alt="Hang gliding">
+			</a>
+			<p>From hang gliding to windsurfing, Rio will satisfy your appetite for adventure.</p>
+		</div>
+	</div>
+	<hr>
+	<div class="wrapper">
+
+		<div class="survey-panel">
+			<h2>Have you visited Brazil?</h2>
+			<form action="./">
+				<table id="survey-table">
+					<thead>
+						<tr>
+							<td colspan=2>Please fill out our quick survey.</td>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Which city or cities have you visited in Brazil?</td>
+								<td>
+									<input type="checkbox" name=cities id="rio" value="rio">
+									<label for="rio">Rio de Janeiro</label>
+									<br>
+									<input type="checkbox" name=cities id="sao-paulo" value="sao-paulo">
+									<label for="sao-paulo">Sao Paulo</label>
+									<br>
+									<input type="checkbox" name=cities id="belo-horizonte" value="belo-horizonte">
+									<label for="belo-horizonte">Belo Horizonte</label>
+									<br>
+									<input type="checkbox" name=cities id="florianopolis" value="florianopolis">
+									<label for="florianopolis">Florian&oacute;polis</label>
+									<br>
+									<input type="checkbox" name=cities id="curitiba" value="curitiba">
+									<label for="curitiba">Curitiba</label>
+								</td>
+							</tr>
+							<tr>
+								<td>Describe your knowledge of Portuguese:</td>
+								<td>
+									<input type="radio" name="pt_level" id="none" value="none">
+									<label for="none">None.</label>
+									<br>
+									<input type="radio" name="pt_level" id="basic" value="basic">
+									<label for="none">I know the basics.</label>
+									<br>
+									<input type="radio" name="pt_level" id="intermediate" value="intermediate">
+									<label for="none">I can have a conversation.</label>
+									<br>
+									<input type="radio" name="pt_level" id="fluent" value="fluent">
+									<label for="none">Total fluency or native speaker.</label>
+								</td>
+							</tr>
+							<tr>
+								<td>Do you plan to travel in the next year?</td>
+								<td>
+									<select name="travel" id="travel">
+										<option value="yes">Yes</option>
+										<option value="no">No</option>
+										<option value="unsure">Not sure</option>
+									</select>
+
+								</td>
+							</tr>
+							<tr>
+								<td>Your email address:</td>
+								<td>
+									<input type="email" name="email" size=30>
+								</td>
+							</tr>
+							<tr>
+								<td colspan=2>
+									<p>If you sign up for our newsletter, we will send you information about:</p>
+									<ul>
+										<li>Travel tips for Rio and other cities of Brazil.</li>
+										<li>Video lessons to improve your Portuguese.</li>
+										<li>Upcoming events and holidays in Brazil.</li>
+										<li>Recipes for popular Brazilian recipes.</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="submit" value="Submit Responses"></td>
+								<td></td>
+							</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+		<div class="survey-panel">
+			<img id="survey-img" alt="Recreio dos Bandeirantes" src="./img/DSC03710-crop.jpg" >
+		</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+
+</html>
